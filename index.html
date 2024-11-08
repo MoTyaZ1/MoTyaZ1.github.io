@@ -17,15 +17,16 @@
             text-decoration: none; /* Без подчеркивания */
             display: inline-block; /* Отображение в строке */
             font-size: 20px; /* Размер шрифта */
-            margin: 12px 6px; /* Отступы */
-            transition: background-color 0.7s, transform 0.7s; /* Плавные переходы */
+            margin: 8px 8px; /* Отступы */
+            transition: box-shadow 0.7s, background-color 0.7s, transform 0.7s; /* Плавные переходы + подсветка*/
             cursor: pointer; /* Указатель мыши */
             border-radius: 7px; /* Закругленные углы */
         }
 
         .button:hover {
-            background-color: #e61d1d; /* Цвет фона при наведении */
-            transform: scale(1.08); /* Увеличение кнопки при наведении */
+            background-color: #ca1e1e; /* Цвет фона при наведении */
+            transform: scale(1.05); /* Увеличение кнопки при наведении */
+            box-shadow: 0px 0px 100px 10px rgb(117, 14, 14); /*Подсветка кнопки*/
         }
     </style>
 
