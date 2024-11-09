@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>01nov24</title>
 </head>
 <body>
-    <img src="rul.png" id="rul">
+    <img src="rul.jpg" id="rul">
     <button onclick="stopRul()">СТОП</button>
     <button onclick="startRul()">СТАРТ</button>
     <script>
@@ -16,14 +16,20 @@
         function rotateRul(){ //вращает колесо
             angle +=2;
         rul.style.transform = 'rotate(' + angle + 'deg)'
-    }
-    let timer;
-    function startRul(){ //вызывается при нажатии кнопки "СТАРТ"
-        timer = setInterval(rotateRul, 1);
-    }
-    function stopRul(){ //Вызывается при нажатии "СТОП"
-    clearInterval(timer)
-    }
+        }
+        let timer;
+        function startRul(){ //вызывается при нажатии кнопки "СТАРТ"
+            timer = setInterval(rotateRul, 1);
+        }
+        function stopRul(){ //Вызывается при нажатии "СТОП"
+        clearInterval(timer)
+        }
     </script>
+    <style>
+            body{
+        background-color: rgb(32, 32, 32);
+        color: white;
+        }
+    </style>
 </body>
 </html>
