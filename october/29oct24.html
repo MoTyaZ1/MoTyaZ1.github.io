@@ -3,28 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>29oct24</title>
 </head>
 <body>
     <script>
-    let zombie = document.createElement('img');
-        zombie.src = 'stickman-running.gif';
-        document.body.append(zombie);
+    let gif = document.createElement('img');
+        gif.src = 'stickman.gif';
+        document.body.append(gif);
 
         let left = 100;
         let step = 3; //длина шага
         let position = 0;
 
-        zombie.style.position = 'fixed';
-        zombie.style.top = '100px'; //отступ сверху
-        zombie.style.left = left + 'px'; // отступ слева
+        gif.style.position = 'fixed';
+        gif.style.top = '100px'; //отступ сверху
+        gif.style.left = left + 'px'; // отступ слева
         
-        function moveZombie(){
+        function moveGif(){
             left = left + step;
-            zombie.style.left = left + 'px';
+            gif.style.left = left + 'px';
         }
 
-        setInterval(moveZombie, 100);
+        setInterval(moveGif, 100);
         </script>
+    <style>
+          body{
+            background-color: rgb(32, 32, 32);
+            color: white;
+          } 
+    </style>
 </body>
 </html>
