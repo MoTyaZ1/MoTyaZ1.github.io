@@ -9,34 +9,59 @@
           background-color: rgb(19, 21, 26);
           color: white;
         }
+
+        .index {
+            background-color: rgba(128, 128, 128, 0.151);
+            width: 300px;
+            border: 3px solid rgb(134, 134, 134);
+            border-radius: 10px;
+            box-shadow: 5px 55px 15px;
+            float: left; /*Распределяет div в правую сторону от другого div*/
+        }
+
         .desk_os{
             background-color: rgb(61, 45, 45);
             width: 300px;
             border: 3px solid rgb(138, 45, 45);
             border-radius: 10px;
             box-shadow: 5px 55px 15px;
+            float: left;
         }
+
         .mob_os{
             background-color: rgb(40, 49, 51);
             width: 300px;
             border: 3px solid rgb(32, 112, 165);
             border-radius: 10px;
             box-shadow: 5px 55px 15px;
+            float: left;
         }
+
         .serv_os{
             background-color: rgb(44, 53, 41);
             width: 300px;
             border: 3px solid rgb(32, 165, 83);
             border-radius: 10px;
             box-shadow: 5px 55px 15px;
+            float: left;
         }
+
         img{
             width: 300px;
+        }
+
+        .center-flexbox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
 <body>
-    <h1>Операционные системы</h1>
+    <div class="center-flexbox">
+        <h1>Операционные системы</h1>
+    </div>
+    <div class="oper">
     <div class="desk_os" >
         <h2>Десктопные ОС</h2>
         <p>Microsoft Windows</p><img src="images/Win11.png" id="rul">
@@ -58,6 +83,7 @@
         <p>Ununtu Server</p><img src="images/Ubuntu.png" id="rul">
         <p>CentOS</p><img src="images/CentOS.png" id="rul">
         <p>Red Hat Enterprise Linux</p><img src="images/RedHat.png" id="rul">
+    </div>
     </div>
 </body>
 </html>
