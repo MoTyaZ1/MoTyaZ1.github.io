@@ -11,7 +11,7 @@
         .button {
             background-color: rgb(61, 73, 88); /* Цвет фона */
             border: none; /* Без границ */
-            color: rgb(0, 0, 0); /* Цвет текста */
+            color: rgb(0, 0, 0);/*фон*/
             padding: 9px 20px; /* Размер кнопки */
             text-align: center; /* Выравнивание текста */
             text-decoration: none; /* Без подчеркивания */
@@ -21,13 +21,25 @@
             transition: box-shadow 1.5s, color 0.4s, background-color 0.4s, transform 0.6s; /* Плавные переходы + подсветка*/
             cursor: pointer; /* Указатель мыши */
             border-radius: 7px; /* Закругленные углы */
+            display: flex; /*Продлевает кнопки по div*/
+        }
+        .index {
+            background-color: rgba(128, 128, 128, 0.151);
+            width: 300px;
+            border: 3px solid rgb(134, 134, 134);
+            border-radius: 10px;
+            box-shadow: 5px 55px 15px;
+            float: left; /*Распределяет div в правую сторону от другого div*/
+        }
+        .center{
+          justify-content: center;
         }
 
         .button:hover {
             background-color: #225392; /* Цвет фона при наведении */
             transform: scale(1.05); /* Увеличение кнопки при наведении */
             box-shadow: 0px 0px 50px 10px rgb(27, 75, 209); /* Подсветка кнопки */
-            color: rgb(255, 255, 255); /* Цвет текста */
+            color: rgb(255, 255, 255);/*текст*/
           }
           
           body{
@@ -35,6 +47,8 @@
             color: white;
           }
     </style>
+    <div class="index">
+      <h1>&nbsp;&nbsp;1 курс</h1>
 <a href="october/22oct24.html" class="button">22 октября 2024</a>
 <a href="october/25oct24.html" class="button">25 октября 2024</a>
 <a href="october/29oct24.html" class="button">29 октября 2024</a>
@@ -44,8 +58,13 @@
 <a href="november/08nov24.html" class="button">8 ноября 2024</a>
 <br>
 <a href="january/oper.html" class="button">Операционные системы</a>
-<br>
+    </div>
+    <div class="index">
+      <div class="center">
+        <p><h1>2 курс</h1></p>
+      </div>
 <a href="september/03sep25.html" class="button">Компоненты</a>
+    </div>
     </body>
 <head>
 </html>
