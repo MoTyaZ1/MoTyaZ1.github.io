@@ -3,8 +3,9 @@
 <head>
   <body>
     <title>Сайт MoTyaZ1</title>
-    <p>&nbsp;<h1>&nbsp&nbspСайт студента Берендеев Матвей Алексеевич гр.3419в</h1></p>
-
+    <div class="center-flexbox">
+      <h1>&nbsp&nbspСайт студента Берендеев Матвей Алексеевич гр.3419в</h1>
+    </div>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <style>
@@ -22,7 +23,8 @@
             cursor: pointer; /* Указатель мыши */
             border-radius: 7px; /* Закругленные углы */
             display: flex; /*Продлевает кнопки по div*/
-        }
+          }
+
         .index {
             background-color: rgba(128, 128, 128, 0.151);
             width: 300px;
@@ -30,10 +32,7 @@
             border-radius: 10px;
             box-shadow: 5px 55px 15px;
             float: left; /*Распределяет div в правую сторону от другого div*/
-        }
-        .center{
-          justify-content: center;
-        }
+          }
 
         .button:hover {
             background-color: #225392; /* Цвет фона при наведении */
@@ -46,9 +45,17 @@
             background-color: rgb(19, 21, 26);
             color: white;
           }
+
+          .center-flexbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
     </style>
     <div class="index">
-      <h1>&nbsp;&nbsp;1 курс</h1>
+      <div class="center-flexbox">
+        <h1>1 курс</h1>
+      </div>
 <a href="october/22oct24.html" class="button">22 октября 2024</a>
 <a href="october/25oct24.html" class="button">25 октября 2024</a>
 <a href="october/29oct24.html" class="button">29 октября 2024</a>
@@ -59,12 +66,13 @@
 <br>
 <a href="january/oper.html" class="button">Операционные системы</a>
     </div>
-    <div class="index">
-      <div class="center">
-        <p><h1>2 курс</h1></p>
-      </div>
-<a href="september/03sep25.html" class="button">Компоненты</a>
+
+  <div class="index">
+    <div class="center-flexbox">
+      <h1>2 курс</h1>
     </div>
+<a href="september/03sep25.html" class="button">Компоненты</a>
     </body>
+  </div>
 <head>
 </html>
