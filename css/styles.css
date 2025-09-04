@@ -91,13 +91,21 @@
             /*Распределяет div в правую сторону от другого div*/
         }
 
-        .index {
+        .main{
+            background-color: rgba(131, 119, 119, 0.151);
+            width: auto;
+            border: 3px solid rgb(126, 111, 111);
+            border-radius: 10px;
+        }
+        .index1 {
             background-color: rgba(128, 128, 128, 0.151);
             width: 300px;
             border: 3px solid rgb(134, 134, 134);
             border-radius: 10px;
             float: left;
             /*Распределяет div в левую сторону от другого div*/
+            padding: 30px;
+            right: 100;
         }
 
         .desk_os {
@@ -173,4 +181,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        .indextext{
+            font-size: 26px;
         }
