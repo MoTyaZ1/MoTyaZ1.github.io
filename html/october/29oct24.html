@@ -3,7 +3,7 @@
 
 <head>
     <link rel="icon" href="../../Main/icons/html.ico">
-    <link rel="stylesheet" href="../../Main/styles.css">
+    <link rel="stylesheet" href="../../css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>29oct24</title>
@@ -15,21 +15,21 @@
 
 <body>
     <script>
-        let gif = document.createElement('img');
-        gif.src = 'images/stickman.gif';
+        let gif = document.createElement("img");
+        gif.src = "../../Main/images/stickman.gif";
         document.body.append(gif);
 
         let left = 100;
         let step = 3; //длина шага
         let position = 0;
 
-        gif.style.position = 'fixed';
-        gif.style.top = '100px'; //отступ сверху
-        gif.style.left = left + 'px'; // отступ слева
+        gif.style.position = "fixed";
+        gif.style.top = "100px"; //отступ сверху
+        gif.style.left = left + "px"; // отступ слева
 
         function moveGif() {
             left = left + step;
-            gif.style.left = left + 'px';
+            gif.style.left = left + "px";
         }
 
         setInterval(moveGif, 100);

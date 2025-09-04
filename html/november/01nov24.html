@@ -3,23 +3,23 @@
 
 <head>
     <link rel="icon" href="../../Main/icons/html.ico">
-    <link rel="stylesheet" href="../../Main/styles.css">
+    <link rel="stylesheet" href="../../css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>01nov24</title>
 </head>
 
 <body>
-    <img src="images/rul.png" id="rul">
+    <img src="../../Main/images/rul.png" id="rul">
     <button onclick="stopRul()">СТОП</button>
     <button onclick="startRul()">СТАРТ</button>
     <script>
-        let rul = document.getElementById('rul');
+        let rul = document.getElementById("rul");
         let angle = 0;
 
         function rotateRul() { //вращает колесо
             angle += 2;
-            rul.style.transform = 'rotate(' + angle + 'deg)'
+            rul.style.transform = "rotate(" + angle + "deg)"
         }
         let timer;
         function startRul() { //вызывается при нажатии кнопки "СТАРТ"
