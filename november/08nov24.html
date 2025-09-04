@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="icon" href="../Main/icons/html.ico">
+    <link rel="stylesheet" href="../Main/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>08nov24</title>
-    <style>
-        body{
-          background-color: rgb(19, 21, 26);
-          color: white;
-        }
-    </style>
 </head>
-    <body>
-        <script>
-            function drawBox(size){
+
+<body>
+    <script>
+        function drawBox(size) {
             let box = document.createElement('div');//рекурсия
             box.style.width = size + 'px'; //ширина
             box.style.height = size + 'px'; //высота
             box.style.border = '5px solid Blue'; //обводка зеленой сплошной линией
-             document.body.append(box); //толщиной 1px 
-             drawBox(size/1.05)
-            }
-            drawBox(500); //запускаем функцию (размер квадрата)
-        </script>
-    </body>
+            document.body.append(box); //толщиной 1px 
+            drawBox(size / 1.05)
+        }
+        drawBox(500); //запускаем функцию (размер квадрата)
+    </script>
+</body>
+
 </html>
