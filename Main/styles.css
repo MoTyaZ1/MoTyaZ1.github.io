@@ -1,0 +1,15 @@
+.button {
+            background-color: rgb(61, 73, 88); /* Цвет фона */
+            border: none; /* Без границ */
+            color: rgb(255, 255, 255);/*фон*/
+            padding: 9px 20px; /* Размер кнопки */
+            text-align: center; /* Выравнивание текста */
+            text-decoration: none; /* Без подчеркивания */
+            display: inline-block; /* Отображение в строке */
+            font-size: 20px; /* Размер шрифта */
+            margin: 8px 8px; /* Отступы */
+            transition: box-shadow 1.5s, color 0.4s, background-color 0.4s, transform 0.6s; /* Плавные переходы + подсветка*/
+            cursor: pointer; /* Указатель мыши */
+            border-radius: 7px; /* Закругленные углы */
+            display: flex; /*Продлевает кнопки по div*/
+        }
