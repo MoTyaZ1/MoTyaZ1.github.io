@@ -1,188 +1,100 @@
-        .button {
-            background-color: rgb(61, 73, 88);
-            /* Цвет фона */
-            border: none;
-            /* Без границ */
-            color: rgb(255, 255, 255);
-            /*фон*/
-            padding: 9px 20px;
-            /* Размер кнопки */
-            text-align: center;
-            /* Выравнивание текста */
-            text-decoration: none;
-            /* Без подчеркивания */
-            display: inline-block;
-            /* Отображение в строке */
-            font-size: 20px;
-            /* Размер шрифта */
-            margin: 8px 8px;
-            /* Отступы */
-            transition: box-shadow 1.5s, color 0.4s, background-color 0.4s, transform 0.6s;
-            /* Плавные переходы + подсветка*/
-            cursor: pointer;
-            /* Указатель мыши */
-            border-radius: 7px;
-            /* Закругленные углы */
-            display: flex;
-            /*Продлевает кнопки по div*/
-        }
+* {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
 
-        .button:hover {
-            background-color: #23ff775d;
-            /* Цвет фона при наведении */
-            transform: scale(1.05);
-            /* Увеличение кнопки при наведении */
-            box-shadow: 0px 0px 50px 10px rgba(36, 255, 28, 0.336);
-            /* Подсветка кнопки */
-            color: rgb(255, 255, 255);
-            /*текст*/
-        }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(19, 21, 26);
+    background: url(../Main/images/wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
-        .telegram {
-            background-color: rgb(54, 145, 255);
-            border: none;
-            color: rgb(255, 255, 255);
-            padding: 9px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 20px;
-            margin: 8px 8px;
-            transition: box-shadow 1.5s, color 0.4s, background-color 0.4s, transform 0.6s;
-            cursor: pointer;
-            border-radius: 7px;
-            display: flex;
-        }
+.wrapper {
+    width: 400px;
+    background: transparent;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px;
+    border: 2px solid rgb(255, 255, 255, .2);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
 
-        .telegram:hover.telegram {
-            background-color: #26afff;
-            transform: scale(1.05);
-            box-shadow: 0px 0px 50px 10px rgb(70, 203, 255);
-        }
+.wrapper_components {
+    width: 1000px;
+    background: transparent;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px;
+    border: 2px solid rgb(255, 255, 255, .2);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Две колонки равной ширины */
+    gap: 20px;
+    /* Расстояние между элементами */
+}
 
-        .github {
-            background-color: rgb(13, 17, 23);
-            border: none;
-            color: rgb(255, 255, 255);
-            padding: 9px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 20px;
-            margin: 8px 8px;
-            transition: box-shadow 1.5s, color 0.4s, background-color 0.4s, transform 0.6s;
-            cursor: pointer;
-            border-radius: 7px;
-            display: flex;
-        }
+.components {
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 30px;
+    background: rgba(19, 12, 39, 0.438);
+    justify-content: center;
+}
 
-        .github:hover.github {
-            background-color: #0d1117;
-            transform: scale(1.05);
-            box-shadow: 0px 0px 50px 10px rgb(7, 16, 39);
-        }
+.block_center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
-        .contacts {
-            background-color: rgba(128, 128, 128, 0.151);
-            width: 300px;
-            border: 3px solid rgb(134, 134, 134);
-            border-radius: 10px;
-            float: right;
-            /*Распределяет div в правую сторону от другого div*/
-        }
+.wrapper h1 {
+    font-size: 28px;
+    text-align: center;
+}
 
-        .main{
-            background-color: rgba(131, 119, 119, 0.151);
-            width: auto;
-            border: 3px solid rgb(126, 111, 111);
-            border-radius: 10px;
-        }
-        .index1 {
-            background-color: rgba(128, 128, 128, 0.151);
-            width: 300px;
-            border: 3px solid rgb(134, 134, 134);
-            border-radius: 10px;
-            float: left;
-            /*Распределяет div в левую сторону от другого div*/
-            padding: 30px;
-            right: 100;
-        }
+.wrapper h2 {
+    font-size: 14px;
+    text-align: center;
+}
 
-        .desk_os {
-            background-color: rgb(61, 45, 45);
-            width: 300px;
-            border: 3px solid rgb(138, 45, 45);
-            border-radius: 10px;
-            float: left;
-        }
+.wrapper_button {
+    width: 290px;
+    background: transparent;
+    color: #fff;
+    margin: 0 auto
+}
 
-        .mob_os {
-            background-color: rgb(40, 49, 51);
-            width: 300px;
-            border: 3px solid rgb(32, 112, 165);
-            border-radius: 10px;
-            float: left;
-        }
+.wrapper_in_components {
+    width: 300px;
+    background: transparent;
+    color: #fff;
+    margin-inline: 0 auto;
+}
 
-        .serv_os {
-            background-color: rgb(44, 53, 41);
-            width: 300px;
-            border: 3px solid rgb(32, 165, 83);
-            border-radius: 10px;
-            float: left;
-        }
+.button {
+    background-color: rgb(61, 73, 88);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: flow-root;
+    transition: box-shadow 1.5s, color 0.4s, background-color 0.4s, transform 0.3s;
+    font-size: 20px;
+    margin: 6px 6px;
+    border-radius: 7px;
+}
 
-        body {
-            background-color: rgb(19, 21, 26);
-            color: white;
-        }
-
-        .CPU {
-            background-color: rgba(128, 128, 128, 0.151);
-            width: 300px;
-            border: 3px solid rgb(134, 134, 134);
-            border-radius: 10px;
-            float: left;
-        }
-
-        .GPU {
-            background-color: rgba(128, 128, 128, 0.151);
-            width: 300px;
-            border: 3px solid rgb(134, 134, 134);
-            border-radius: 10px;
-            float: left;
-        }
-
-        .RAM {
-            background-color: rgba(128, 128, 128, 0.151);
-            width: 300px;
-            border: 3px solid rgb(134, 134, 134);
-            border-radius: 10px;
-            float: left;
-        }
-
-        .SSD {
-            background-color: rgba(128, 128, 128, 0.151);
-            width: 300px;
-            border: 3px solid rgb(134, 134, 134);
-            border-radius: 10px;
-            float: left;
-        }
-
-        .MotherBoard {
-            background-color: rgba(128, 128, 128, 0.151);
-            width: 300px;
-            border: 3px solid rgb(134, 134, 134);
-            border-radius: 10px;
-            float: left;
-        }
-
-        .center-flexbox {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .indextext{
-            font-size: 26px;
-        }
+.button:hover {
+    background-color: #23ff775d;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 50px 10px rgba(36, 255, 28, 0.100);
+    color: rgb(255, 255, 255);
+}
