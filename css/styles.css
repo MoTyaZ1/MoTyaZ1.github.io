@@ -5,20 +5,21 @@
 
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
     background: rgba(19, 21, 26);
     background: url(../Main/images/wallpaper.jpg);
     background-size: cover;
     background-position: center;
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center; /* центрирует по обоим осям */
 }
 
 .wrapper {
-    width: 400px;
     background: transparent;
     color: #fff;
-    border-radius: 50px;
+    border-radius: 30px;
     padding: 10px;
     border: 2px solid rgb(255, 255, 255, .2);
     backdrop-filter: blur(16px);
@@ -26,7 +27,6 @@ body {
 }
 
 .wrapper_components {
-    width: 1000px;
     background: transparent;
     color: #fff;
     border-radius: 50px;
@@ -37,7 +37,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* Две колонки равной ширины */
-    gap: 20px;
+    gap: 10px;
     /* Расстояние между элементами */
 }
 
@@ -45,7 +45,6 @@ body {
     border: 2px solid rgb(255, 255, 255, .2);
     border-radius: 30px;
     background: rgba(19, 12, 39, 0.438);
-    justify-content: center;
 }
 
 .block_center {
@@ -65,14 +64,12 @@ body {
 }
 
 .wrapper_button {
-    width: 290px;
     background: transparent;
     color: #fff;
     margin: 0 auto
 }
 
 .wrapper_in_components {
-    width: 300px;
     background: transparent;
     color: #fff;
     margin-inline: 0 auto;
@@ -89,7 +86,7 @@ body {
     transition: box-shadow 1.5s, color 0.4s, background-color 0.4s, transform 0.3s;
     font-size: 20px;
     margin: 6px 6px;
-    border-radius: 7px;
+    border-radius: 20px;
 }
 
 .button:hover {
