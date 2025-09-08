@@ -28,6 +28,7 @@ body {
     flex: 1 1 calc(50% - 20px);
     min-width: 300px;
     background: #0c141db6;
+    color: #fff;
     border-radius: 40px;
     padding: 20px;
     box-sizing: border-box;
