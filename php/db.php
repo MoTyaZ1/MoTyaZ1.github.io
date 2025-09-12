@@ -1,14 +1,9 @@
 <?php
 
-$servername = 'localhost';
-$username = 'root';
-$password = '';
-$dbname = 'motyaz_database';
+$conn = new PDO('mysql:host=localhost;dbname=motyaz_database', 'root', '');
 
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$email = $_GET['email'];
+$pass = $_GET['pass'];
+echo $email.$pass;
 
-if(!$conn){
-    die('Connection failed'. mysqli_connect_error());
-} else {
-    echo 'Nice!';
-} ?>
+$conn -> exec("INSERT INTO users (email,pass) values ('$email','$pass')");
