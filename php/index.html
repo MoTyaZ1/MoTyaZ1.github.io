@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
     <title>Document</title>
 </head>
 <body>
-    <form action="db.php" method="get">
+    <div>
+    <form action="php/db.php" method="get">
         <input type="text" placeholder='Процессор' name='CPU'>
         <input type="text" placeholder='Видиокарта' name='GPU'>
         <input type="text" placeholder='Материнская плата' name='MotherBoard'>
@@ -15,11 +17,14 @@
         <input type="text" placeholder='Цена' name='Price'>
         <input type="submit">
     </form>
-    <form action="createdb.php">
-        <input type="submit" value="Создать БазуДанных">
+    </div>
+    <div>
+    <form action="php/createdb.php">
+        <input type="submit" value="Создать Базу Данных">
     </form>
-    <form action="createtable.php">
+    <form action="php/createtable.php">
         <input type="submit" value="Создать Таблицу">
     </form>
+    </div>
 </body>
 </html
