@@ -18,7 +18,7 @@ echo "Вы вошли как ".$_SESSION["email"];
     <form action="db.php" method="get">
         <input type="email" placeholder='email' name='email'>
         <input type="text" placeholder='pass' name='pass'>
-        <input type="submit">
+        <input type="submit" value="Зарегестрироваться">
     </form>
     <form action="createdb.php">
         <input type="submit" value="Создать БазуДанных">

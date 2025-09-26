@@ -9,9 +9,9 @@ $result = $conn -> query("SELECT * from users WHERE email = '$email' and pass = 
 
 if ($result -> fetchAll()){
     $_SESSION["email"] = $email;
-    header ("Location: index.php");
+    header ("Location: ../index.php");
 } else {
     session_destroy();
-    header ("Location: index.php");
+    header ("Location: ../index.php");
 }
 ?>

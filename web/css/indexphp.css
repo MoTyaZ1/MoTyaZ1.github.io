@@ -16,11 +16,6 @@ html, body{
     align-items: center;
 }
 
-body{
-    color: aqua;
-
-}
-
 input{
     text-align: center;
     padding: 10px;
